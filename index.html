@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dwello — find your dream home from our curated selection of exquisite properties.">
+  <title>Find Your Dream Home — Dwello</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Dwello — inicio">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M5 2v26M5 3h19" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="square"/>
+          <rect x="9" y="7" width="17" height="18" fill="none" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <span>Dwello</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#top" class="nav-link is-active">Home</a>
+        <a href="#why-us" class="nav-link">Service</a>
+        <a href="#testimonials" class="nav-link">Agents</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Buscar" id="search-toggle">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Cuenta de usuario">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.5 20c0-3.9 3.4-6.5 7.5-6.5s7.5 2.6 7.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a class="btn btn-dark btn-small" href="#residences">Sign up</a>
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Find Your<br>Dream Home</h1>
+          <p>Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
+          <a class="btn btn-dark" href="#residences">Sign up</a>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero-house.png" alt="Modern luxury home with glass balconies and a pool" width="900" height="620">
+        </div>
+      </div>
+
+      <!-- ============ SEARCH BAR ============ -->
+      <form class="search-wrap" id="search-form" role="search">
+        <div class="search-bar">
+          <label class="search-field">
+            <span class="sr-only">Location</span>
+            <input type="search" id="search-location" placeholder="Location" autocomplete="off">
+            <img src="assets/icon-location-pin.png" alt="" aria-hidden="true">
+          </label>
+          <label class="search-field">
+            <span class="sr-only">Property type</span>
+            <select id="search-type">
+              <option value="" selected>Type</option>
+              <option value="house">House</option>
+              <option value="condo">Condo</option>
+              <option value="villa">Villa</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 9.5V20h13V9.5M10 20v-6h4v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </label>
+          <label class="search-field">
+            <span class="sr-only">Price range</span>
+            <select id="search-price">
+              <option value="" selected>Price Range</option>
+              <option value="low">Under $1,000,000</option>
+              <option value="mid">$1,000,000 – $3,000,000</option>
+              <option value="high">Over $3,000,000</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 9.2c-.7-.8-1.7-1.2-3-1.2-1.7 0-2.8.8-2.8 2s1 1.7 2.8 2.1c1.8.4 3 1 3 2.2s-1.2 2.1-3 2.1c-1.4 0-2.5-.5-3.2-1.4M12 6.5v11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </label>
+          <button class="btn btn-dark" type="submit">Sign up</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============ WE HELP YOU ============ -->
+    <section class="section help-section" id="service" aria-labelledby="help-title">
+      <div class="container help-grid">
+        <div class="help-media">
+          <img src="assets/help-house.jpg" alt="Contemporary home with illuminated facade at dusk" width="595" height="450">
+        </div>
+        <div class="help-copy">
+          <h2 id="help-title">We Help You To Find<br>Your Dream Home</h2>
+          <p>From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality</p>
+          <div class="stats">
+            <div class="stat"><strong>8K+</strong><span>Houses Available</span></div>
+            <div class="stat"><strong>6K+</strong><span>Houses Sold</span></div>
+            <div class="stat"><strong>2K+</strong><span>Trusted Agents</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section why-section" id="why-us" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="why-title">Why Choose Us</h2>
+          <p>Elevating Your Home Buying Experience with Expertise, Integrity,<br>and Unmatched Personalized Service</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon"><img src="assets/icon-location-pin.png" alt="" aria-hidden="true"></span>
+            <h3>Expert Guidance</h3>
+            <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><img src="assets/icon-person-edit.png" alt="" aria-hidden="true"></span>
+            <h3>Personalized Service</h3>
+            <p>Our services adapt to your unique needs, making your journey stress-free</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><img src="assets/icon-clipboard.png" alt="" aria-hidden="true"></span>
+            <h3>Transparent Process</h3>
+            <p>Stay informed with our clear and honest approach to buying your home</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><img src="assets/icon-handshake.png" alt="" aria-hidden="true"></span>
+            <h3>Exceptional Support</h3>
+            <p>Providing peace of mind with our responsive and attentive customer service</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POPULAR RESIDENCES ============ -->
+    <section class="section residences-section" id="residences" aria-labelledby="residences-title">
+      <div class="container">
+        <h2 id="residences-title" class="section-title">Our Popular Residences</h2>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+        <div class="residence-grid" id="residence-grid">
+          <article class="residence-card" data-location="san francisco" data-type="house" data-price="2500000">
+            <img src="assets/house-san-francisco.png" alt="Modern home with pool in San Francisco" width="382" height="350">
+            <div class="residence-info">
+              <p class="residence-place"><img src="assets/icon-location-pin.png" alt="" aria-hidden="true">San Francisco, California</p>
+              <div class="residence-meta">
+                <span><span class="meta-icon"><img src="assets/icon-bed.png" alt="" aria-hidden="true"></span>4 Rooms</span>
+                <span><span class="meta-icon"><img src="assets/icon-tape.png" alt="" aria-hidden="true"></span>3,500 sq ft</span>
+              </div>
+              <div class="residence-bottom">
+                <a class="btn btn-dark btn-tiny" href="#contact">Sign up</a>
+                <strong>$2,500,000</strong>
+              </div>
+            </div>
+          </article>
+          <article class="residence-card" data-location="beverly hills" data-type="condo" data-price="850000">
+            <img src="assets/house-beverly-hills.png" alt="Villa with turquoise pool in Beverly Hills" width="382" height="350">
+            <div class="residence-info">
+              <p class="residence-place"><img src="assets/icon-location-pin.png" alt="" aria-hidden="true">Beverly Hills, California</p>
+              <div class="residence-meta">
+                <span><span class="meta-icon"><img src="assets/icon-bed.png" alt="" aria-hidden="true"></span>3 Rooms</span>
+                <span><span class="meta-icon"><img src="assets/icon-tape.png" alt="" aria-hidden="true"></span>1,500 sq ft</span>
+              </div>
+              <div class="residence-bottom">
+                <a class="btn btn-dark btn-tiny" href="#contact">Sign up</a>
+                <strong>$850,000</strong>
+              </div>
+            </div>
+          </article>
+          <article class="residence-card" data-location="palo alto" data-type="villa" data-price="3700000">
+            <img src="assets/house-palo-alto.png" alt="Contemporary residence with pool in Palo Alto" width="382" height="350">
+            <div class="residence-info">
+              <p class="residence-place"><img src="assets/icon-location-pin.png" alt="" aria-hidden="true">Palo Alto, California</p>
+              <div class="residence-meta">
+                <span><span class="meta-icon"><img src="assets/icon-bed.png" alt="" aria-hidden="true"></span>6 Rooms</span>
+                <span><span class="meta-icon"><img src="assets/icon-tape.png" alt="" aria-hidden="true"></span>4,000 sq ft</span>
+              </div>
+              <div class="residence-bottom">
+                <a class="btn btn-dark btn-tiny" href="#contact">Sign up</a>
+                <strong>$3,700,000</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No homes match those filters. Try different criteria.</p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="testimonials-title">What People Say<br>About Dwello</h2>
+        </div>
+        <div class="testimonial-grid" id="testimonial-grid"></div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" type="button" id="prev-testimonial" aria-label="Testimonio anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="carousel-btn" type="button" id="next-testimonial" aria-label="Testimonio siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ / CONTACT ============ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <h2 id="contact-title">Do You Have Any Questions?<br>Get Help From Us</h2>
+        <div class="contact-perks">
+          <span><img src="assets/icon-verified.png" alt="" aria-hidden="true">Chat live with our support team</span>
+          <span><img src="assets/icon-verified.png" alt="" aria-hidden="true">Browse our FAQ</span>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="email-field">
+            <span class="sr-only">Correo electrónico</span>
+            <img src="assets/icon-envelope.png" alt="" aria-hidden="true">
+            <input type="email" id="newsletter-email" placeholder="Enter your email address..." required autocomplete="email">
+          </label>
+          <button class="btn btn-dark" type="submit">Submit</button>
+        </form>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Dwello — inicio">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M5 2v26M5 3h19" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="square"/>
+            <rect x="9" y="7" width="17" height="18" fill="none" stroke="currentColor" stroke-width="3"/>
+          </svg>
+          <span>Dwello</span>
+        </a>
+        <p>Bringing you closer to<br>your dream home, one<br>click at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h3>About</h3>
+        <a href="#why-us">Our Story</a>
+        <a href="#residences">Careers</a>
+        <a href="#testimonials">Our Team</a>
+        <a href="#service">Resources</a>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <a href="#contact">FAQ</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#contact">Help Center</a>
+        <a href="#contact">Terms of Service</a>
+      </div>
+      <div class="footer-col">
+        <h3>Find Us</h3>
+        <a href="#residences">Events</a>
+        <a href="#residences">Locations</a>
+        <a href="#contact">Newsletter</a>
+      </div>
+      <div class="footer-col">
+        <h3>Our Social</h3>
+        <a href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram</a>
+        <a href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg>Facebook</a>
+        <a href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8 8 8 8m0-8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Twitter (x)</a>
+      </div>
+    </div>
+    <div class="container footer-credit">
+      <a class="footer-credit-link" href="https://jon-torlen.github.io/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/jt.jpg" alt="Retrato de Jonathan Toro" width="40" height="40">
+        <span>Creado por <strong>Jonathan Toro</strong></span>
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
